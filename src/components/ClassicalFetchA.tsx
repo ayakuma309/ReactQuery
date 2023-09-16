@@ -6,10 +6,9 @@ import { ChevronDoubleRightIcon } from '@heroicons/react/solid'
 export const ClassicalFetchA: FC = () => {
   const navigate = useNavigate()
   const { isLoading, isError, todos } = useClassicalFetch()
-  console.log('rendered ClassicalFetchA')
+  // console.log('rendered ClassicalFetchA')
   if (isLoading) return <div>{'Loading...'}</div>
   if (isError) return <div>{'Error'}</div>
-  console.log(todos)
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="mb-3 text-center font-bold">ClassicalFetchA</p>

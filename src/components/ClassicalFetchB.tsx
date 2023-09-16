@@ -6,7 +6,7 @@ import { ChevronDoubleLeftIcon } from '@heroicons/react/solid'
 export const ClassicalFetchB: FC = () => {
   const navigate = useNavigate()
   const { todos } = useStateContext()
-  console.log('rendered ClassicalFetchB')
+  // console.log('rendered ClassicalFetchB')
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="mb-3 text-center font-bold">ClassicalFetchB</p>
