@@ -10,6 +10,7 @@ import { ReactQueryA } from './components/ReactQueryA'
 import { ReactQueryB } from './components/ReactQueryB'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { MainContext } from './components/MainContext'
+import { MainRTKit } from './components/MainRTKit'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -33,6 +34,7 @@ const App: FC = () => {
               <Route path="/fetch-a" element={<ClassicalFetchA />} />
               <Route path="/fetch-b" element={<ClassicalFetchB />} />
               <Route path="/main-context" element={<MainContext />} />
+              <Route path="/main-rtkit" element={<MainRTKit />} />
             </Routes>
           </Layout>
         </StateProvider>
